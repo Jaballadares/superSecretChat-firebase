@@ -1,0 +1,273 @@
+body {
+  box-sizing: border-box; }
+
+/**** **** **** **** ****
+BREAKPOINTS -
+USAGE: @include breakpoint(small) {}
+**** **** **** **** ****/
+/**** **** **** **** ****
+Colors
+**** **** **** **** ****/
+html {
+  background: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 100%; }
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.688em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.037em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2.3%; }
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 2%; }
+
+.secret {
+  font-size: .5em;
+  vertical-align: middle; }
+
+.mainHeader {
+  margin-bottom: .2%; }
+
+.line {
+  height: 2px;
+  /* border: 1px solid black; */
+  color: black;
+  background: black;
+  padding-top: 0;
+  width: 45%;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .line {
+      width: 90%; } }
+
+.row {
+  display: inline-flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.boom {
+  display: flex;
+  font-size: 1.2em; }
+  @media (max-width: 767px) {
+    .boom {
+      display: block; } }
+
+.played {
+  width: 50%;
+  margin-right: 10%;
+  font-size: 1.09em; }
+  @media (max-width: 767px) {
+    .played {
+      width: 100%; } }
+
+.circles {
+  display: flex;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .circles {
+      padding-left: 25%; } }
+
+.chain {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 2%; }
+  @media (max-width: 767px) {
+    .chain {
+      width: 150px;
+      height: 150px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .chain {
+      margin-top: 4%; } }
+
+.greenCircle {
+  background-color: #6B7701; }
+
+.two::before {
+  position: absolute;
+  left: 10px; }
+
+.blueCircle {
+  background-color: rgba(145, 185, 176, 0.9);
+  margin-left: -80px; }
+
+.hide {
+  display: none; }
+
+.top-bar_chat:hover {
+  cursor: pointer; }
+
+/* .chatContainer {
+	width   : 50%;
+	height  : 250px;
+	border  : 5px solid $orange;
+	margin  : 0 auto;
+	position: relative;
+}
+ */
+.chatModule {
+  width: 50%;
+  height: 300px;
+  border: 5px solid #D85212;
+  display: inline-block;
+  overflow: visible;
+  /* margin: 0 auto; */
+  position: relative;
+  margin-top: 1.5%; }
+  @media (max-width: 767px) {
+    .chatModule {
+      width: 100%; } }
+  .chatModule header {
+    color: #747474;
+    padding-top: 2%; }
+  .chatModule footer {
+    min-width: 95%;
+    position: absolute;
+    padding: 2.5%;
+    bottom: 0;
+    background: tomato;
+    vertical-align: middle; }
+    .chatModule footer .typedMessage {
+      width: 78%;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin: 0;
+      padding-left: 1%;
+      height: 44px;
+      vertical-align: middle;
+      color: #474747;
+      font-size: .9em;
+      resize: none; }
+    .chatModule footer .sendMessage {
+      width: 15%;
+      color: white;
+      background: #47c9ad;
+      border: none;
+      line-height: 25px;
+      box-sizing: content-box;
+      vertical-align: bottom; }
+      .chatModule footer .sendMessage:hover {
+        background: #32ab91; }
+
+.messages {
+  overflow: auto;
+  max-height: 178px;
+  padding: 0 15px;
+  margin: 0; }
+  .messages ol {
+    padding: 0;
+    list-style: none; }
+    .messages ol li {
+      padding: 1%;
+      margin: 1% 0;
+      background-color: white; }
+
+#john {
+  color: tomato; }
+
+#kayla {
+  color: #21705f; }
+
+::-webkit-input-placeholder {
+  color: #474747; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #474747; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #474747; }
+
+:-ms-input-placeholder {
+  color: #474747; }
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease;
+  opacity: 0; }
+
+/* === === === === ==== ===== ========= ======== =========
+			BUTTONS
+========= ==================== ========= ======= ===== */
+.sendMessage {
+  right: 0;
+  border: none;
+  color: white;
+  background-color: #AAE6D9;
+  padding: 2%;
+  font-size: 1em; }
+  .sendMessage:hover {
+    background-color: #83dac7;
+    cursor: pointer; }
+  @media (max-width: 767px) {
+    .sendMessage {
+      font-size: .7em; } }
+
+/* === === === === ==== ===== ========= ======== =========
+      NEW STYLES
+========= ==================== ========= ======= ===== */
+.userName {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline; }
+
+.hide {
+  display: none; }
+
+.signedIn {
+  color: #6B7701; }
+
+.messages ol {
+  margin: 0; }
+
+/* === === === === ==== ===== ========= ======== =========
+      Login Styles
+========= ==================== ========= ======= ===== */
+.loginBox {
+  padding-top: 2%;
+  text-align: center; }
+
+.name {
+  padding: 1%;
+  font-size: .7em; }
+
+.email {
+  padding: 1%;
+  font-size: .7em; }
+
+.pwd {
+  margin-top: 1%;
+  padding: 1%;
+  font-size: .7em; }
+
+.signIn {
+  border: none;
+  color: white;
+  background: #AAE6D9;
+  padding: 1.2%;
+  font-size: .7em; }
+  .signIn:hover {
+    background: #38bfa2;
+    cursor: pointer;
+    border: none; }
+
+/*# sourceMappingURL=styles.css.map */

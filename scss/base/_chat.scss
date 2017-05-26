@@ -1,0 +1,50 @@
+button {
+  width: 40%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stripey {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.youPlus {
+  font-family: $subheader-font;
+  color: lighten(black, 20%);
+  font-size: 3em;
+  letter-spacing: .1em;
+}
+
+.secret {
+  font-size: .5em;
+  vertical-align: middle;
+}
+
+.line {
+  width: 90%;
+  color: black;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border: 1px solid black;
+}
+
+.p {
+  line-height: 1.5em;
+}
+.circles {
+  margin-top: 2em;
+  margin-left: 8.5em;
+  @include breakpoint(small) {
+    left: 50%;
+    margin: 0 0 0 15%;
+  }
+}
+.timeStamp {
+  background: $new-yellow;
+  color: darken(white, 4%);
+  font-family: $main-font;
+}
